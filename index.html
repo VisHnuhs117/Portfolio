@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bfe7df4bf5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+            <p>QA Test Engineer</p>
+            <h1>Hi, I'm <span>Vishnu HS</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Computer Science Engineering student at Visvesvaraya Technological University with experience in QA testing, Game development and Android development. I am passionate about learning and exploring emerging technologies to enhance my technical skills. I enjoy solving real-world problems through programming and creating innovative solutions. My versatile skill set reflects a strong foundation in software development and a commitment to continuous learning.</p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>QA Tester</span><br>Software testing/Gameplay testing</li>
+                        <li><span>Game Developer</span><br>Game Development</li>
+                        <li><span>Andriod Developer</span><br>Andriod App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oct 2023-Nov 2023</span><br>Intrenship at ARK Infosolution</li>
+                        <li><span>Oct 2022-oct 2022</span><br>Intrenship at 10 Seconds</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>SRV High School Hassan</li>
+                        <li><span>2021</span><br>BGS PU College (PCMC) Hassan</li>
+                        <li><span>2025</span><br>BE in Computer Science at RIT Hassan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Gameplay Testing</h2>
+                <p>Gameplay testing involves systematically playing through a game to identify bugs, assess performance, and ensure a smooth user experience. Testers explore various scenarios, report issues with detailed reproduction steps, and collaborate with developers to verify fixes and improve the game.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-trophy"></i>
+                <h2>Game Development</h2>
+                <p>Game development involves designing, coding, and integrating assets to bring a game concept to life. It includes tasks like creating gameplay mechanics, optimizing performance, and ensuring a seamless player experience through testing and iteration. Collaboration between designers, programmers, and artists is key to success.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Andriod App Development</h2>
+                <p>Android app development involves designing and coding user-friendly applications using tools like Android Studio and Java/Kotlin. It includes creating intuitive interfaces, integrating APIs, and testing functionality to ensure optimal performance across devices. Debugging and user feedback are crucial for refinement.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>  
+    </div>
+</div>
+<!-- ----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Memory Card Game</h3>
+                    <p>A memory card game challenges players to match pairs of cards by remembering their positions. Players flip two cards at a time, aiming to find matching pairs while improving memory and concentration skills. It's engaging and often features themes or images for added fun.</p>
+                    <a href="https://github.com/VisHnuhs117/Memory-Card-Game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>MediaMorph AI</h3>
+                    <p>A mini project on Generative AI called 'MediaMorph AI' for our VTU 6th semester curriculum. It generates media content from user prompts. We chose Django for building dynamic web applications, and OpenAI as our AI model.</p>
+                    <a href="https://github.com/Sharan-m-04/MediaMorph-AI"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Inspyr AI</h3>
+                    <p>A project on Generative AI called 'Inspyr AI' for our VTU 7th semester curriculum. It generates images, and websites from user prompts. We chose Django for its power and efficiency in building dynamic web applications, and OpenAI as our AI model.</p>
+                    <a href="https://github.com/Sharan-m-04/Inspyr-AI"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> shivamv1972@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7975793364</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vishnu.hs.33"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/VishnuHs117"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/soul_vishnu/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vishnuhs"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/vishnu's final resume.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email " required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vishnu HS.</p>
+    </div>
+</div>
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontants = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontant of tabcontants){
+            tabcontant.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzP4ysiC6r37HpPtW-5pxnz7hqPcOcXJaPARmUXBC1kpALMcOkuEuBPaRUkXiksy0QAtQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
